@@ -30,10 +30,10 @@ document.getElementById("wins").addEventListener("change", e => {
 document.getElementById("losses").addEventListener("change", e => {
   if (typeof JSON.parse(e.target.value) == "number") {
     wins = JSON.parse(e.target.value);
-    document.getElementById("error-win").innerText = "";
+    document.getElementById("error-loss").innerText = "";
   } else {
     wins = 0;
-    document.getElementById("error-win").innerText = "Invalid Format";
+    document.getElementById("error-loss").innerText = "Invalid Format";
   }
   onChange();
 });
