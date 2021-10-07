@@ -15,16 +15,21 @@
         margin: 0 auto;
         font-size: 3vh;
       }
+      
+      #error-win, #error-lose {
+        color: red;
+        font-size: 0.5vh
+      }
     </style>
   </head>
   <body>
     <label for="wins">Wins:</label>
     <input type="text" id="wins">
-    <br>
+    <p id="error-win"></p>
     <br>
     <label for="losses">Losses:</label>
     <input type="text" id="losses">
-    <br>
+    <p id="error-loss"></p>
     <br>
     <p>Points: <span id="points">0</span></p>
     <p>Winrate: <span id="win-rate">0</span></p>
