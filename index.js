@@ -1,11 +1,16 @@
 let wins = 0;
 let losses = 0;
 
+let points = 0;
+let winRate = 0;
+let experience = 0;
+let skill = 0;
+
 let onChange = () => {
-  const points = losses + (6 * wins);
-  const winRate = 100 * (wins / (wins + losses));
-  const experience = wins * 1.5 + losses; 
-  const skill = winRate * experience / 100;
+  points = losses + (6 * wins);
+  winRate = 100 * (wins / (wins + losses));
+  experience = wins * 1.5 + losses; 
+  skill = winRate * experience / 100;
   document.getElementById("points").innerText = points;
   document.getElementById("win-rate").innerText = winRate;
   document.getElementById("Experience").innerText = experience;
