@@ -8,8 +8,8 @@ let onChange = () => {
   const skill = winRate * experience / 100;
   document.getElementById("points").innerText = points;
   document.getElementById("win-rate").innerText = winRate;
-  document.getElementById("points").innerText = experience;
-  document.getElementById("points").innerText = skill;
+  document.getElementById("Experience").innerText = experience;
+  document.getElementById("skill").innerText = skill;
 };
 
 document.getElementById("wins").addEventListener("change", e => {
