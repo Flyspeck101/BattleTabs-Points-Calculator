@@ -14,7 +14,7 @@ let onChange = () => {
   document.getElementById("points").innerText = points;
   document.getElementById("win-rate").innerText = winRate;
   document.getElementById("Experience").innerText = experience;
-  document.getElementById("skill").innerText = skill;
+  document.getElementById("Skill").innerText = skill;
 };
 
 document.getElementById("wins").addEventListener("change", e => {
