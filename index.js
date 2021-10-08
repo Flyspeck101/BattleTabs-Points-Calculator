@@ -29,7 +29,7 @@ document.getElementById("wins").addEventListener("change", e => {
 });
 document.getElementById("losses").addEventListener("change", e => {
   if (typeof JSON.parse(e.target.value) == "number") {
-    wins = JSON.parse(e.target.value);
+    losses = JSON.parse(e.target.value);
     document.getElementById("error-loss").innerText = "";
   } else {
     wins = 0;
